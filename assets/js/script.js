@@ -1,5 +1,3 @@
-// Assignment code here
-
 var categorySelected = [0];
 
 var availableText = [
