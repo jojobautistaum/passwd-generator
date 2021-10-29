@@ -13,10 +13,10 @@ function passwordRequirements() {
   var passwordLength = prompt("Please enter the password length [8-128]: ");
   passwordLength = parseInt(passwordLength, 10);
 
-  // check for valid number
+  // check for valid number and required length
   if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     alert("Please enter a valid number between 8 to 128");
-    passwordRequirements();
+    return passwordRequirements();
   }
 
   if (confirm("Do you want to add CAPITAL letters?")) {
@@ -51,13 +51,21 @@ function generatePassword() {
     return passwordText;
   }
 
+  // Make a copy of the categorySelected array
+  var tempCategorySelected = [...categorySelected];
+ 
   // Make sure we have at least one character in each category selected
   for (var i = 0; i < categorySelected.length; i++) {
-    charIndex = Math.floor(Math.random() * availableText[categorySelected[i]].length);
-    passwordText += availableText[categorySelected[i]][charIndex];
+    // Select the category randomly
+    selectedIndex = Math.floor(Math.random() * tempCategorySelected.length);
+    charIndex = Math.floor(Math.random() * availableText[tempCategorySelected[selectedIndex]].length);
+    passwordText += availableText[tempCategorySelected[selectedIndex]][charIndex];
+    
+    // Remove the category that has been used from temporary array
+    tempCategorySelected.splice(selectedIndex, 1);
   }
- 
-  // Get the rest of the characters with random category selected and characters
+  
+  // Get the rest of the characters from random category selected
   for (var i = categorySelected.length; i < passwordLength; i++ ) {
     selectedIndex = Math.floor(Math.random() * categorySelected.length);
     charIndex = Math.floor(Math.random() * availableText[categorySelected[selectedIndex]].length);
