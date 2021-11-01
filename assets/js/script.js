@@ -1,10 +1,11 @@
+// This will serve as an index to availableText object category/type of characters
 var categorySelected = [0];
 
 var availableText = [
-"abcdefghijklmnopqrstuvwxyz",
-"ABCDEFGHIJKLMNOPQRSTUVWXYZ",
-"0123456789",
-" !”#$%&’()*+,-./:;<=>?@[\\]^_`{|}~"
+"abcdefghijklmnopqrstuvwxyz",           // lowercase
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ",           // uppercase
+"0123456789",                           // numbers
+" !”#$%&’()*+,-./:;<=>?@[\\]^_`{|}~"    // special characters
 ];
 
 // Get optional password requirements
