@@ -8,7 +8,7 @@ var availableText = [
 " !”#$%&’()*+,-./:;<=>?@[\\]^_`{|}~"    // special characters
 ];
 
-// Get optional password requirements
+// Get the length and optional password requirements
 function passwordRequirements() {
   categorySelected = [0];
   var passwordLength = prompt("Please enter the password length [8-128]: ");
