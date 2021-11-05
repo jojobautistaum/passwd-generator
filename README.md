@@ -14,17 +14,14 @@ This app will generate a random password between 8-128 lower case characters and
 * Passwords should generate at least one character of each of the types of characters selected by the user.
 
 ## Screenshots
-* Initial Page
-![Page 1](./assets/images/password-generator-initial-page.jpg)
+* Initial Page <br/> ![Initial Page](./assets/images/password-generator-initial-page.jpg)
+
 * User Inputs
-    - Password Length
-![Prompt for length](./assets/images/prompt-length.jpg)
-    - Add Upper Case characters
-![Capital letters](./assets/images/prompt-capital-letters.jpg)
-    - Add Numbers
-![Numbers](./assets/images/prompt-numbers.jpg)
-    - Special Characters
-![Special Characters](./assets/images/prompt-special-characters.jpg)
+    - Password Length <br/> ![Prompt for length](./assets/images/prompt-length.jpg)
+    - Add Upper Case characters <br/> ![Capital letters](./assets/images/prompt-capital-letters.jpg)
+    - Add Numbers <br/> ![Numbers](./assets/images/prompt-numbers.jpg)
+    - Special Characters <br/> ![Special Characters](./assets/images/prompt-special-characters.jpg)
+* Generated Password <br/> ![Final Page](./assets/images/sample-generated-password.jpg)
 
 ## Password App Link
 [Generate a randomized password](https://jojobautistaum.github.io/passwd-generator/)
